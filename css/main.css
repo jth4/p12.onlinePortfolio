@@ -1,0 +1,218 @@
+/* Sprite */
+.sprite {
+    background-image: url("../img/portfolio-sprite.jpg");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-api-thumb {
+    width: 246px;
+    height: 142px;
+    background-position: -5px -5px;
+}
+
+.sprite-dashboard-thumb {
+    width: 246px;
+    height: 142px;
+    background-position: -5px -157px;
+}
+
+.sprite-gallery-thumb {
+    width: 246px;
+    height: 142px;
+    background-position: -261px -5px;
+}
+
+.sprite-video-thumb {
+    width: 246px;
+    height: 143px;
+    background-position: -261px -157px;
+}
+
+
+/* Global */
+* {
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+}
+
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: initial;	
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h2 {
+	font-size: 4rem;
+	font-weight: initial;
+}
+
+.container {
+	width: 95%;
+	margin: 0px auto;
+}
+
+.bluebird {
+	background-color: #00A6DF;
+	color: white;
+	font-size: 2rem;
+	padding-bottom: 50px;
+}
+
+.bluebird h2 {
+	padding-top: 30px;
+}
+
+.bluebird p,
+#about p {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+/* Header */
+#header svg {
+	width: 130px;
+	margin-top: 30px;
+}
+
+#header p {
+	font-size: 2rem;
+}
+
+
+/* Coverpic */
+#coverpic {
+	display: none;
+}
+
+/* Nav */
+#nav {
+	border-top: 4px solid #00A6DF;
+	border-bottom: 4px solid #00A6DF;
+	margin-top: 30px;
+}
+
+#nav a {
+	font-size: 1.5rem;
+	display: block;
+}
+
+#nav li {
+	margin: 10px;
+
+}
+
+#nav a:active,
+#nav li:hover,
+#nav a:hover{
+	background: #00A6DF;
+	color: white;
+}
+
+/* Portfolio */
+#portfolio p:first-of-type {
+	margin: 50px 0;
+	font-size: 1.25rem;
+}
+
+.portfolio-container {
+	display: block;
+}
+
+.portfolio-item div:first-of-type{
+	margin: 0 auto;
+}
+
+.portfolio-item h3 {
+	font-size: 2rem;
+	font-weight: initial;
+}
+
+.portfolio-item div{
+	transition: all .25s ease-in-out;
+}
+.portfolio-item div:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 3px 5px #444;
+	
+}
+
+/* Skills */
+
+/* About */
+#about p {
+	text-align: left;
+	font-size: 1.25rem;
+}
+
+/* Contact */
+#contact a{
+	color: white;
+}
+
+#contact a:hover{
+	text-decoration: underline;
+}
+
+/* Media Q */
+
+@media (min-width: 768px) {
+	
+	.container {
+		max-width: 1124px;
+	}
+	
+	#header {
+		float: left;
+	}
+	
+	#header p{
+		display: none;
+	}
+	
+	#nav {
+		border: none;
+		float: right;
+		margin-top: initial;
+	}
+	
+	#nav li{
+		margin: 2px; 
+	}
+	
+	#nav a{
+		text-align: left;
+		font-size: 1.25em;
+	}
+
+	#coverpic {
+		display: initial;
+	}
+	
+	#coverpic img {
+		width: 100%;
+	}
+	
+	.portfolio-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.portfolio-item {
+		max-width: 44%;
+		display: inline;
+		margin: 0 3%;
+		flex-grow: 1;
+
+		}
+}

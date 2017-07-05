@@ -1,0 +1,68 @@
+body {
+	background-color: #000;
+}
+
+h1 {
+	color: white;
+	background: orange;
+	padding-left: 35px;
+	letter-spacing: -2.5px;
+}
+
+/*/////////////////////////////LAYOUT*/
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*/////////////////////////GALLERY*/
+
+#gallery {
+	width: 100%;
+	margin:0 auto;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;	
+}
+
+#gallery img {
+	border: 2px solid #373737;
+	border-radius: 0px;
+	padding: 50px;
+	background-color: #000;
+	transition: background-color .38s ease;
+}
+
+#gallery a{
+	max-width: initial;
+	height: 200px;
+}
+
+/*/////////////////////////HOVER */
+
+#gallery img:hover {
+	background-color: orange;
+	-webkit-animation: fader 15s infinite;
+	animation: fader 15s infinite;
+}
+
+@keyframes  fader {
+    15% { background-color: orange;} 
+    45% { background-color:	yellow;} 
+    90% { background-color: lime;}
+	} 
+}
+
+
+/*////////////////////////MEDIA Q's*/
+
+@media screen and (min-width:768px) {
+
+	#gallery {
+		max-width: 100%;
+		width: 100%;
+		display: flex;
+	}
+	
+}

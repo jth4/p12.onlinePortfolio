@@ -1,0 +1,72 @@
+body {
+	width: 100%;
+	margin: 0 auto;
+	font-family: Roboto, sans-serif;
+	background: #111;
+	color: rgba(255,255,255,0.25);	
+}
+
+video {
+	max-width: 1280px;
+}
+
+#capWrap {
+	margin: 25px;
+	line-height: 2;
+}
+
+/*///////////////////*/
+/*    highlights     */
+/*///////////////////*/
+
+.highlighted {
+/*	text-decoration: underline;*/
+	color: #874ef3;
+}
+
+p span {
+	transition-duration: .25s;
+	padding: 0 2px;
+}
+
+p span:hover {
+	cursor: pointer;
+	/*background: rgba(255,205,235,.35);
+	color: #874ec3;*/
+	background: #aaa;
+	color: rgba(255,255,255,1);
+	border-radius:2px;	
+}
+
+/*///////////////////*/
+/*    meJS styles    */
+/*///////////////////*/
+
+.mejs__time-current {
+	background-color: rgba(5,150,250,.8);
+}
+.mejs__timeloaded{
+	border: 0;
+	border-radius: 10px;
+}
+
+.mejs__controls:not([style*="display: none"]) {
+	background:none;
+}
+
+/*///////////////////*/
+/*     Media Q's     */
+/*///////////////////*/
+
+@media screen and (min-width:768px){
+	
+	body {
+		max-width: 80%;
+	}
+	#mainWrap {
+		padding: 25px;
+	}
+	#capWrap {
+		margin: 25px 0;
+	}
+}
