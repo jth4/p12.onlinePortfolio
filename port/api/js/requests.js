@@ -1,5 +1,5 @@
 var pokeXhr = new XMLHttpRequest();
-pokeXhr.open('GET', 'http://pokeapi.co/api/v2/pokemon/?limit=151');
+pokeXhr.open('GET', 'https://pokeapi.co/api/v2/pokemon/?limit=151');
 
 pokeXhr.onreadystatechange = function () {
 	if(pokeXhr.readyState === 4) {
